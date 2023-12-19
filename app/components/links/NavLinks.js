@@ -23,6 +23,7 @@ const NavLinks = ({
         flex
         gap-1
         items-center
+        cursor-pointer
         ${fw}
         `}
     >
