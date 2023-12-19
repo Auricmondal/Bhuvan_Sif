@@ -6,6 +6,7 @@ import GridSystem from "./components/GridSystem";
 import Latest from "./components/Latest";
 import AppCard from "./components/AppCard";
 import Button from "./components/Button";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
