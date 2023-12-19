@@ -4,8 +4,10 @@ const InnerSection= ({children}) => {
   return (
     <div 
     className='
-    py-8
-    lg:py-12
+    pt-8
+    pb-4
+    lg:pt-12
+    lg:pb-6
     '>
         {children}
     </div>
