@@ -18,7 +18,7 @@ const Button = ({
   rounded,
   align,
   width,
-  type
+  type,key
 }) => {
   const router = useRouter();
   const {isOpen,onClose,onOpen}= useHamMenu();
@@ -38,6 +38,7 @@ const Button = ({
 
   return (
     <button
+    key={key?key:''}
       className={`
         ${bg}
         ${color}

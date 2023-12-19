@@ -13,6 +13,7 @@ const NavDropSection = ({
         <div className='flex flex-col gap-2 pt-2'>
             {linkLists.map((linkList)=>(
                 <Button 
+                key={linkList}
                 width={'w-full'}
                 size={'small'}
                 align={'left'}

@@ -11,6 +11,7 @@ const FeaturedCard = ({
   return (
 
         <div 
+        key={label}
         className={`
          ${imageUrl}
          bg-cover

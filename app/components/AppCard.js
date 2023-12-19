@@ -13,6 +13,7 @@ action
 
   return (
       <div 
+      key={label}
       className={`
       ${bgImg}
       bg-cover
