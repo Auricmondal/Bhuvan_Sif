@@ -25,7 +25,7 @@ const Navbar = () => {
           alt="ham menu"
         />
         <Image
-          src={"/assets/images/logo.png"}
+          src={"/assets/images/logo.webp"}
           width={234}
           height={46}
           alt="logo of bhuvan"

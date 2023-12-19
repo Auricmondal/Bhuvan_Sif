@@ -22,8 +22,8 @@ export default function Home() {
           description={`India's G20 presidency has marked a significant milestone in its global leadership role. With, India taking the presidency for the first time, it is steering discussions and initiatives among the world's major economies to address complex challenges.`}
           action={"/"}
           latest={"true"}
-          bgimgUrl={`md:bg-[url('/assets/images/deskimage.png')]`}
-          mobimgUrl={`bg-[url('/assets/images/mobimage.png')]`}
+          bgimgUrl={`md:bg-[url('/assets/images/deskimg.webp')]`}
+          mobimgUrl={`bg-[url('/assets/images/mobimage.webp')]`}
         />
         <div 
         className="
@@ -60,23 +60,23 @@ export default function Home() {
               action={"/"}
               type={"2r2c"}
               label={"Maps"}
-              imageUrl={`bg-[url('/assets/images/map.png')]`}
+              imageUrl={`bg-[url('/assets/images/maps.webp')]`}
             />
             <FeaturedCard
               action={"/"}
               type={"2r"}
               label={"Weather"}
-              imageUrl={`bg-[url('/assets/images/Weather.png')]`}
+              imageUrl={`bg-[url('/assets/images/Weather.webp')]`}
             />
             <FeaturedCard
               action={"/"}
               label={"Data Archives"}
-              imageUrl={`bg-[url('/assets/images/da.png')]`}
+              imageUrl={`bg-[url('/assets/images/da.webp')]`}
             />
             <FeaturedCard
               action={"/"}
               label={"Vista"}
-              imageUrl={`bg-[url('/assets/images/vista.png')]`}
+              imageUrl={`bg-[url('/assets/images/vista.webp')]`}
             />
           </GridSystem>
         </InnerSection>
@@ -101,7 +101,7 @@ export default function Home() {
               description={
                 "View the agriculture related applications and its resources"
               }
-              bgImg={'bg-[url("/assets/images/agriculture.jpg")]'}
+              bgImg={'bg-[url("/assets/images/agriculture.webp")]'}
               action={"/"}
             />
             <AppCard
@@ -109,7 +109,7 @@ export default function Home() {
               description={
                 "View the tourism related applications and its resources"
               }
-              bgImg={'bg-[url("/assets/images/tourism.png")]'}
+              bgImg={'bg-[url("/assets/images/tourism.webp")]'}
               action={"/"}
             />
             <AppCard
@@ -117,7 +117,7 @@ export default function Home() {
               description={
                 "View the forestry related applications and its resources"
               }
-              bgImg={'bg-[url("/assets/images/forestry.jpg")]'}
+              bgImg={'bg-[url("/assets/images/forestry.webp")]'}
               action={"/"}
             />
             <Button
@@ -152,29 +152,29 @@ export default function Home() {
           >
             <CardBasic
               action={'/'}
-              bg={''}
+              bg={`bg-[url('/assets/images/thematic.webp')]`}
               label={'Thematic Services'}
             />
             <CardBasic
               action={'/'}
-              bg={''}
-              label={'Thematic Services'}
+              bg={`bg-[url('/assets/images/ocean.webp')]`}
+              label={'Ocean Services'}
             />
             <CardBasic
               action={'/'}
-              bg={''}
-              label={'Thematic Services'}
+              bg={`bg-[url('/assets/images/disaster.webp')]`}
+              label={'Disaster Management'}
             />
             <CardBasic
               action={'/'}
-              bg={''}
-              label={'Thematic Services'}
+              bg={`bg-[url('/assets/images/cmap.webp')]`}
+              label={'Create a Map'}
             />
           </GridSystem>
         </InnerSection>
       </Section>
       <Section
-        bg={`bg-[url('/assets/images/newsletter.png')]`}
+        bg={`bg-[url('/assets/images/newsletter.webp')]`}
         
       >
         <div 
@@ -236,23 +236,23 @@ export default function Home() {
           >
             <CardBasic
               action={'/'}
-              bg={''}
-              label={'Thematic Services'}
+              bg={`bg-[url('/assets/images/ministry.webp')]`}
+              label={'Central Minitries'}
             />
             <CardBasic
               action={'/'}
-              bg={''}
-              label={'Thematic Services'}
+              bg={`bg-[url('/assets/images/sapp.webp')]`}
+              label={'Special Applications'}
             />
             <CardBasic
               action={'/'}
-              bg={''}
-              label={'Thematic Services'}
+              bg={`bg-[url('/assets/images/ggov.webp')]`}
+              label={'G Governance'}
             />
             <CardBasic
               action={'/'}
-              bg={''}
-              label={'Thematic Services'}
+              bg={`bg-[url('/assets/images/state.webp')]`}
+              label={'State Application'}
             />
           </GridSystem>
         </InnerSection>
