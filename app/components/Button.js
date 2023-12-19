@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { useRouter } from 'next/navigation'
 import React from 'react'
+import useHamMenu from '../hooks/useHamMenu';
 
 
 const Button = ({
@@ -14,9 +15,27 @@ const Button = ({
   iconpos,
   rotate,
   btnSize,
-  rounded
+  rounded,
+  align,
+  width,
+  type
 }) => {
   const router = useRouter();
+  const {isOpen,onClose,onOpen}= useHamMenu();
+    const handlClick=()=>{
+      if(type=='ham')
+        {
+          if(isOpen)
+            onClose()
+        onOpen()
+      }
+      if(isOpen)
+      onClose()
+      if(action)
+      router.push(action)
+
+    }
+
   return (
     <button
       className={`
@@ -26,11 +45,12 @@ const Button = ({
         font-bold
         ${rounded?rounded:'rounded-sm'}
         flex
+        ${width}
         items-center
-        justify-center
+        ${align=='left'?'justify-between':'justify-center'}
         gap-1
       `}
-     onClick={() => router.push(action)}
+     onClick={handlClick}
     >
       {iconpos=='b' && <Image className={rotate} src={icon} width={btnSize} height={btnSize}/> }
       {label}

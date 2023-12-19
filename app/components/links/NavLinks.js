@@ -1,4 +1,5 @@
 'use Client'
+import useDropdown from '@/app/hooks/useDropdown';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation'
 import React from 'react'
@@ -15,9 +16,23 @@ const NavLinks = ({
     fw
 }) => {
     const router = useRouter();
+    const {isOpen,onClose,onOpen}= useDropdown();
+    const handlClick=()=>{
+      if(label=='Solution')
+        {
+          if(isOpen)
+            onClose()
+        onOpen()
+      }
+      if(isOpen)
+      onClose()
+
+      router.push(action)
+
+    }
   return (
     <li
-        onClick={()=>{router.push(action)}}
+        onClick={handlClick}
         className={`
         ${color}
         flex

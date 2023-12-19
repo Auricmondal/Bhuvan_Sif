@@ -1,19 +1,27 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import Button from "./Button";
-import NavLinks from "./links/NavLinks";
+import Button from "../Button";
+import NavLinks from "../links/NavLinks";
+import useHamMenu from "@/app/hooks/useHamMenu";
 
 const Navbar = () => {
+  const {isOpen,onClose,onOpen}= useHamMenu();
+
   return (
     <div className="sticky top-0 z-50 h-[80px] w-full bg-black border-b-2 border-b-gray-200 flex justify-between items-center ">
       {/* Left side of the navbar */}
       <div className="bg-white h-full flex items-center pl-4">
         <Image
-          className="md:hidden"
+          className="md:hidden cursor-pointer"
           src={"/assets/icons/hammenu.svg"}
           height={16}
           width={16}
+          onClick={()=>{
+            if(isOpen)
+            onClose()
+            onOpen()
+          }}
           alt="ham menu"
         />
         <Image
@@ -46,7 +54,8 @@ const Navbar = () => {
           <NavLinks
             label={"Solution"}
             fw={"font-bold"}
-            action={"/"}
+            type={'dropdown'}
+            action={'/'}
             icon={"/assets/icons/arrow.svg"}
             rotate={"rotate-90"}
             iconpos={"a"}
