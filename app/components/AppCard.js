@@ -1,3 +1,5 @@
+'use client'
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 const AppCard = ({
@@ -6,6 +8,9 @@ description,
 bgImg,
 action
 }) => {
+
+  const router = useRouter();
+
   return (
       <div 
       className={`
@@ -18,7 +23,13 @@ action
       items-center
       justify-center
       relative
-      `}>
+      border
+      border-white
+      border-opacity-30
+      cursor-pointer
+      `}
+      onClick={()=>{router.push(action)}}
+      >
         <div className='absolute  opacity-40 bg-black h-full w-full'></div>
           <div className='z-20 text-center p-2'> 
             <h3 className=' text-white text-[32px] font-bold'>

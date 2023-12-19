@@ -13,7 +13,8 @@ const Button = ({
   icon,
   iconpos,
   rotate,
-  btnSize
+  btnSize,
+  rounded
 }) => {
   const router = useRouter();
   return (
@@ -21,9 +22,9 @@ const Button = ({
       className={`
         ${bg}
         ${color}
-        ${size=='small'? 'w-auto h-[33px] p-2':size='md'?'p-4 h-[32px] md:h-auto':''}
+        ${size=='small'? 'w-auto h-[33px] p-2':size=='md'?'p-4 h-[32px] md:h-auto':size=='lg'?'text-lg py-4 px-8':'p-4'}
         font-bold
-        rounded-sm
+        ${rounded?rounded:'rounded-sm'}
         flex
         items-center
         justify-center
