@@ -1,6 +1,6 @@
 import React from 'react'
 
-const InnerSection=React.FC= ({children}) => {
+const InnerSection= ({children}) => {
   return (
     <div 
     className='
